@@ -1,0 +1,12 @@
+Public Class frmuser
+
+
+    Private Sub frmuser_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        opendb()
+        sqlquery()
+        lock()
+
+        dg.DataSource = dbds.Tables("tbluser")
+
+
+End Class
